@@ -1,0 +1,145 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="netflix">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="video" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="title"/>
+              <xs:element type="xs:string" name="director"/>
+              <xs:element name="writer">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="part" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="quality"/>
+              <xs:element name="genres">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="genre" maxOccurs="unbounded" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="stars">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="star" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:short" name="id" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ratings">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:float" name="imdb"/>
+                    <xs:element type="xs:float" name="netflix"/>
+                    <xs:element type="xs:float" name="rottenTomatoes"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="popularity">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:byte">
+                      <xs:attribute type="xs:string" name="unit" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="production"/>
+              <xs:element type="xs:string" name="downloadable"/>
+              <xs:element name="size">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:float">
+                      <xs:attribute type="xs:string" name="unit" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="duration">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="hours"/>
+                    <xs:element type="xs:byte" name="minutes"/>
+                    <xs:element type="xs:byte" name="seconds"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="recommendation">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:byte">
+                      <xs:attribute type="xs:string" name="unit" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="numberOfLikes"/>
+              <xs:element type="xs:short" name="numberOfDownloads"/>
+              <xs:element type="xs:short" name="numberOfViews"/>
+              <xs:element type="xs:string" name="language"/>
+              <xs:element name="availableSubtitles">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="subtitles" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="lang" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="restrictions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="age"/>
+                    <xs:element type="xs:string" name="violence"/>
+                    <xs:element type="xs:string" name="adultContent"/>
+                    <xs:element type="xs:string" name="blood"/>
+                    <xs:element type="xs:string" name="safeForChildren"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="censored"/>
+              <xs:element type="xs:string" name="netflixOriginal"/>
+              <xs:element name="releaseDate">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:short" name="year"/>
+                    <xs:element type="xs:string" name="month"/>
+                    <xs:element type="xs:byte" name="day"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="keywords">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="keyword" maxOccurs="unbounded" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="type" use="optional"/>
+            <xs:attribute type="xs:short" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<netflix>
+    <video type="movie" id="123">
+        <title>Straight outta Prague</title>
+        <director>Michel Ray</director>
+        <writer part="screenplay">Robert Brownie</writer>
+        <quality>Ultra HD</quality>
+        <genres>
+            <genre>Action</genre>
+            <genre>Comedy</genre>
+        </genres>
+        <stars>
+            <star id="390">Jammie Chen</star>
+            <star id="340">Jilien de Rart</star>
+        </stars>
+        <ratings>
+            <imdb>3.7</imdb>
+            <netflix>4.0</netflix>
+            <rottenTomatoes>4.0</rottenTomatoes>
+        </ratings>
+        <popularity unit="%">70</popularity>
+        <production>Walter Bros</production>
+        <downloadable>Yes</downloadable>
+        <size unit="GB">1.3</size>
+        <duration>
+            <hours>1</hours>
+            <minutes>38</minutes>
+            <seconds>10</seconds>
+        </duration>
+        <recommendation unit="%">70</recommendation>
+        <numberOfLikes>350</numberOfLikes>
+        <numberOfDownloads>120</numberOfDownloads>
+        <numberOfViews>1710</numberOfViews>
+        <language>English</language>
+        <availableSubtitles>
+            <subtitles lang="ENG">Yes</subtitles>
+            <subtitles lang="CZE">NO</subtitles>
+            <subtitles lang="GER">Yes</subtitles>
+            <subtitles lang="RUS">NO</subtitles>
+        </availableSubtitles>
+        <restrictions>
+            <age>16</age>
+            <violence>Yes</violence>
+            <adultContent>No</adultContent>
+            <blood>No</blood>
+            <safeForChildren>No</safeForChildren>
+        </restrictions>
+        <censored>Yes</censored>
+        <netflixOriginal>Yes</netflixOriginal>
+        <releaseDate>
+            <year>2017</year>
+            <month>April</month>
+            <day>21</day>
+        </releaseDate>
+        <keywords>
+            <keyword>Prague</keyword>
+            <keyword>straight</keyword>
+            <keyword>Brownie</keyword>
+        </keywords>
+    </video>
+    <video type="stand-up" id="567">
+        <title>Hello, World</title>
+        <director>Jack Rollenhol</director>
+        <writer part="screenplay">Jimmy Kimble</writer>
+        <quality>Ultra HD</quality>
+        <genres>
+            <genre>Stand up</genre>
+            <genre>Comedy</genre>
+        </genres>
+        <stars>
+            <star id="390">Louie CK</star>
+        </stars>
+        <ratings>
+            <imdb>3.7</imdb>
+            <netflix>5.0</netflix>
+            <rottenTomatoes>5.0</rottenTomatoes>
+        </ratings>
+        <popularity unit="%">80</popularity>
+        <production>Netflix</production>
+        <downloadable>Yes</downloadable>
+        <size unit="GB">1.1</size>
+        <duration>
+            <hours>1</hours>
+            <minutes>22</minutes>
+            <seconds>11</seconds>
+        </duration>
+        <recommendation unit="%">90</recommendation>
+        <numberOfLikes>440</numberOfLikes>
+        <numberOfDownloads>320</numberOfDownloads>
+        <numberOfViews>1990</numberOfViews>
+        <language>English</language>
+        <availableSubtitles>
+            <subtitles lang="ENG">Yes</subtitles>
+            <subtitles lang="CZE">Yes</subtitles>
+            <subtitles lang="GER">No</subtitles>
+            <subtitles lang="RUS">NO</subtitles>
+        </availableSubtitles>
+        <restrictions>
+            <age>18</age>
+            <violence>No</violence>
+            <adultContent>Yes</adultContent>
+            <blood>No</blood>
+            <safeForChildren>No</safeForChildren>
+        </restrictions>
+        <censored>No</censored>
+        <netflixOriginal>Yes</netflixOriginal>
+        <releaseDate>
+            <year>2017</year>
+            <month>March</month>
+            <day>12</day>
+        </releaseDate>
+        <keywords>
+            <keyword>Louie</keyword>
+            <keyword>CK</keyword>
+            <keyword>comedy</keyword>
+        </keywords>
+    </video>
+    <video type="movie" id="222">
+        <title>Guardians of the Universe</title>
+        <director>Angel Richards</director>
+        <writer part="screenplay">Alexander Holmes</writer>
+        <quality>Full HD</quality>
+        <genres>
+            <genre>Action</genre>
+            <genre>Drama</genre>
+        </genres>
+        <stars>
+            <star id="390">Ronald Kinsey</star>
+            <star id="340">Jim Morroals</star>
+        </stars>
+        <ratings>
+            <imdb>3.2</imdb>
+            <netflix>4.1</netflix>
+            <rottenTomatoes>4.1</rottenTomatoes>
+        </ratings>
+        <popularity unit="%">60</popularity>
+        <production>Carvel</production>
+        <downloadable>Yes</downloadable>
+        <size unit="GB">1.2</size>
+        <duration>
+            <hours>1</hours>
+            <minutes>50</minutes>
+            <seconds>11</seconds>
+        </duration>
+        <recommendation unit="%">65</recommendation>
+        <numberOfLikes>400</numberOfLikes>
+        <numberOfDownloads>100</numberOfDownloads>
+        <numberOfViews>1600</numberOfViews>
+        <language>English</language>
+        <availableSubtitles>
+            <subtitles lang="ENG">Yes</subtitles>
+            <subtitles lang="CZE">Yes</subtitles>
+            <subtitles lang="GER">Yes</subtitles>
+            <subtitles lang="RUS">Yes</subtitles>
+        </availableSubtitles>
+        <restrictions>
+            <age>12</age>
+            <violence>No</violence>
+            <adultContent>No</adultContent>
+            <blood>No</blood>
+            <safeForChildren>Yes</safeForChildren>
+        </restrictions>
+        <censored>Yes</censored>
+        <netflixOriginal>No</netflixOriginal>
+        <releaseDate>
+            <year>2017</year>
+            <month>April</month>
+            <day>23</day>
+        </releaseDate>
+        <keywords>
+            <keyword>Guardians</keyword>
+            <keyword>Universe</keyword>
+            <keyword>Carvel</keyword>
+        </keywords>
+    </video>
+    <video type="series" id="088">
+        <title>The big bang theory</title>
+        <director>Leonard Hoffman</director>
+        <writer part="screenplay">Denis Titov</writer>
+        <quality>Ultra HD</quality>
+        <genres>
+            <genre>Sci-Fi</genre>
+            <genre>Comedy</genre>
+        </genres>
+        <stars>
+            <star id="390">Ronald Tims</star>
+            <star id="340">Robbin Williams</star>
+        </stars>
+        <ratings>
+            <imdb>3.7</imdb>
+            <netflix>3.0</netflix>
+            <rottenTomatoes>4.0</rottenTomatoes>
+        </ratings>
+        <popularity unit="%">70</popularity>
+        <production>Universal</production>
+        <downloadable>No</downloadable>
+        <size unit="GB">1.34</size>
+        <duration>
+            <hours>1</hours>
+            <minutes>49</minutes>
+            <seconds>13</seconds>
+        </duration>
+        <recommendation unit="%">80</recommendation>
+        <numberOfLikes>350</numberOfLikes>
+        <numberOfDownloads>130</numberOfDownloads>
+        <numberOfViews>1600</numberOfViews>
+        <language>English</language>
+        <availableSubtitles>
+            <subtitles lang="ENG">Yes</subtitles>
+            <subtitles lang="CZE">NO</subtitles>
+            <subtitles lang="GER">Yes</subtitles>
+            <subtitles lang="RUS">NO</subtitles>
+        </availableSubtitles>
+        <restrictions>
+            <age>16</age>
+            <violence>Yes</violence>
+            <adultContent>No</adultContent>
+            <blood>No</blood>
+            <safeForChildren>No</safeForChildren>
+        </restrictions>
+        <censored>Yes</censored>
+        <netflixOriginal>Yes</netflixOriginal>
+        <releaseDate>
+            <year>2017</year>
+            <month>April</month>
+            <day>21</day>
+        </releaseDate>
+        <keywords>
+            <keyword>Prague</keyword>
+            <keyword>straight</keyword>
+            <keyword>Brownie</keyword>
+        </keywords>
+    </video>
+    <video type="movie" id="767">
+        <title>L.A. Champion</title>
+        <director>Michel Ray</director>
+        <writer part="screenplay">Mickey Ciprus</writer>
+        <quality>Ultra HD</quality>
+        <genres>
+            <genre>Action</genre>
+            <genre>Sports</genre>
+        </genres>
+        <stars>
+            <star id="390">Olivier Roamn</star>
+            <star id="340">Silvia Star</star>
+        </stars>
+        <ratings>
+            <imdb>3.5</imdb>
+            <netflix>4.2</netflix>
+            <rottenTomatoes>4.1</rottenTomatoes>
+        </ratings>
+        <popularity unit="%">55</popularity>
+        <production>Whitings Films</production>
+        <downloadable>No</downloadable>
+        <size unit="GB">1.2</size>
+        <duration>
+            <hours>1</hours>
+            <minutes>55</minutes>
+            <seconds>30</seconds>
+        </duration>
+        <recommendation unit="%">40</recommendation>
+        <numberOfLikes>110</numberOfLikes>
+        <numberOfDownloads>300</numberOfDownloads>
+        <numberOfViews>1203</numberOfViews>
+        <language>English</language>
+        <availableSubtitles>
+            <subtitles lang="ENG">Yes</subtitles>
+            <subtitles lang="CZE">NO</subtitles>
+            <subtitles lang="GER">Yes</subtitles>
+            <subtitles lang="RUS">NO</subtitles>
+        </availableSubtitles>
+        <restrictions>
+            <age>16</age>
+            <violence>No</violence>
+            <adultContent>No</adultContent>
+            <blood>No</blood>
+            <safeForChildren>No</safeForChildren>
+        </restrictions>
+        <censored>No</censored>
+        <netflixOriginal>No</netflixOriginal>
+        <releaseDate>
+            <year>2016</year>
+            <month>May</month>
+            <day>21</day>
+        </releaseDate>
+        <keywords>
+            <keyword>Boxing</keyword>
+            <keyword>LA</keyword>
+            <keyword>champion</keyword>
+        </keywords>
+    </video>
+</netflix>
+    

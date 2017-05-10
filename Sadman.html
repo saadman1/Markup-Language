@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markup Languages Project</title>
+</head>
+<body>
+   <article>
+       <header>
+           <h1>Markup Languages Project</h1>
+           <h2>Netflix model</h2>
+           <h3>Table of Contents</h3>
+           <ol>
+               <li><a title="Go to Introduction" href="#intro">Introduction</a></li>
+               <li><a title="Go to Methodology" href="#method">Methodology</a></li>
+               <li><a title="Go to Project contents" href="#contents">Project contents</a></li>
+               <li><a title="Go to Elements" href="#elements">Elements</a></li>
+               <li><a title="Go to Transformation" href="#transform">Transformation</a></li>
+               <li><a title="Go to Conclusion" href="#conclusion">Conclusion</a></li>
+           </ol>
+       </header>
+       <h3><a id="intro">Introduction</a></h3>
+            <p>
+                Netflix is a subscription based video service offering movies, TV series, shows, etc. This project shows how video files in Netflix (or any similar service) can be stored and used. It includes data about movies, such as ratings, genre, etc. And it shows how users can filter the data acquiring the desired output.
+            </p>
+        <br>
+        <h3><a id="method">Methodology</a></h3>
+            <p>
+                As it was required in this course, several technologies were used:
+                </p>
+                <ul>
+                    <li><a title="XML Wikipedia" href="https://en.wikipedia.org/wiki/XML">XML</a>
+                    </li>
+                    <li><a title="XML Schema Wikipedia" href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)">XML Schema</a>
+                    </li>
+                    <li><a title="HTML Wikipedia" href="https://en.wikipedia.org/wiki/HTML">HTML</a>
+                    </li>
+                    <li>
+                    <a title="XSL Wikipedia" href="https://en.wikipedia.org/wiki/XSL">XSL</a>
+                    </li>
+                    <li><a title="XSLT Wikipedia" href="https://en.wikipedia.org/wiki/XSLT">XSLT</a>
+                    </li>
+                </ul>
+        <br>
+        <h3><a id="contents">Project conctens</a></h3>
+            <p>
+                Using the aforementioned technologies, the following files have been created:
+                </p>
+                <dl>
+                    <dt>XML File</dt>
+                    <dd>XML file containing elements and data about them</dd>
+                    <dt>XML Schema File</dt>
+                    <dd>XSD file describing the structure of XML</dd>
+                    <dt>XSL Transforamtion File</dt>
+                    <dd>Code for generation of HTML table</dd>
+                    <dt>HTML File</dt>
+                    <dd>Table with data obtained by XSLT</dd>
+                </dl>
+            
+        <br>
+        <h3><a id="elements">Elements</a></h3>
+            <p>
+            The root element is &ltnetflix&gt. &ltnetflix&gt contains 5 records of &ltvideo&gt.
+            </p>
+            <p>Each &ltvideo&gt contains information about the movie, such as</p>
+                <section>
+                        <ul>
+                            <li>&lttitle&gt</li>
+                            <li>&ltdirector&gt</li>
+                            <li>&ltratings&gt</li>
+                            <li>&ltsize&gt</li>
+                            <li>&ltquality&gt</li>
+                            <li>&ltpopularity&gt</li>
+                            <li>&ltrecommendation&gt</li>
+                            <li>&ltgenre&gt</li>
+                            <li>&ltyear&gt</li>
+                            <li>&ltrestrictions&gt</li>
+                            <li>&ltproduction&gt</li>
+                            <li>etc.</li>
+                        </ul>
+       </section>     
+        <br>
+        <h3><a id="transform">Transformation</a></h3>
+            <p>
+                To use the data in XML, XSLT is used. With XSLT different kinds of output can be obtained.
+            </p>
+            <p>
+               5 video files available in Netflix are sorted by title name in this table. This table also contains other infromation about the video. If the video is recommended 80% and over, its cell is green. If the movie has popularity 60 or less, its cell is red.
+            </p>
+            <h4>It is shown in the following table</h4>
+                <section>
+                    <table border="1">
+                         <tr bgcolor="white">
+                            <th>Title</th>
+                            <th>Director</th>
+                            <th>Quality</th>
+                            <th>Size</th>
+                            <th>IMDB</th>
+                            <th>Netflix rating</th>
+                            <th>Recommended</th>
+                            <th>Popularity</th>
+                         </tr>
+                         <tr>
+                            <td>Guardians of the Universe</td>
+                            <td>Angel Richards</td>
+                            <td>Full HD</td>
+                            <td>1.2</td>
+                            <td>3.2</td>
+                            <td>4.1</td>
+                            <td>65</td>
+                            <td style="background-color:red">60</td>
+                         </tr>
+                         <tr>
+                            <td>Hello, World</td>
+                            <td>Jack Rollenhol</td>
+                            <td>Ultra HD</td>
+                            <td>1.1</td>
+                            <td>3.7</td>
+                            <td>5.0</td>
+                            <td style="background-color:green">90</td>
+                            <td>80</td>
+                         </tr>
+                         <tr>
+                            <td>L.A. Champion</td>
+                            <td>Michel Ray</td>
+                            <td>Ultra HD</td>
+                            <td>1.2</td>
+                            <td>3.5</td>
+                            <td>4.2</td>
+                            <td>40</td>
+                            <td style="background-color:red">55</td>
+                         </tr>
+                         <tr>
+                            <td>Straight outta Prague</td>
+                            <td>Michel Ray</td>
+                            <td>Ultra HD</td>
+                            <td>1.3</td>
+                            <td>3.7</td>
+                            <td>4.0</td>
+                            <td>70</td>
+                            <td>70</td>
+                         </tr>
+                         <tr>
+                            <td>The big bang theory</td>
+                            <td>Leonard Hoffman</td>
+                            <td>Ultra HD</td>
+                            <td>1.34</td>
+                            <td>3.7</td>
+                            <td>3.0</td>
+                            <td style="background-color:green">80</td>
+                            <td>70</td>
+                         </tr>
+                      </table>
+                </section>
+        <br>
+        <h3><a id="conclusion">Conclusion</a></h3>
+            <p>By creating this project I have learnt a lot of new things and practised those taught during the Markup Languages course. This project shows how in my opinion video services may be organised, how they may use the data stored about the videos and how users can use the service and search for desired movies and TV shows.</p>
+   </article>
+   <br>
+   <br>
+   <br>
+   <footer>
+       <p>
+            <a href="https://github.com/saadman1/markup">Find this project on GitHub</a><br>
+            <b>Sadman Amir. Czech University of Life Sciences, 2017.</b>
+       </p>
+   </footer>
+</body>
+</html>
